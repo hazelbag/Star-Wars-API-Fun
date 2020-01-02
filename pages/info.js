@@ -4,7 +4,7 @@ import fetch from 'isomorphic-unfetch';
 
 
 const InfoPage = ({ data }) => {
-    console.log('info data: ',data)
+    // console.log('info data: ',data)
     return (
         <Layout>
             <div className='landingPG'>
@@ -48,7 +48,7 @@ const InfoPage = ({ data }) => {
 InfoPage.getInitialProps = async function (context) {
     console.log(context)
     const { id } = context.query
-    const res = await fetch(`https://swapi.co/api/films/${id}`)
+    const res = await fetch(`${id}`)
     const data = await res.json()
     console.log('Info Page Data: ', data)
   

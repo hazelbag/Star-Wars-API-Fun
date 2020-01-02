@@ -4,6 +4,7 @@ import fetch from 'isomorphic-unfetch';
 
 const Index = ({ data }) => {
     console.log(data)
+    console.log(data.results[0].url)
     return (
         <Layout>
             <div className='landingPG'>
@@ -16,7 +17,7 @@ const Index = ({ data }) => {
                 <ul>
                     {data.results.map(result => (
                         <li key={result.episode_id}>
-                            <Link as={`/info/film`} href={`info/?id=${result.episode_id}`}>
+                            <Link as={`/info/film`} href={`info/?id=${result.url}`}>
                                 <a>{result.title}</a>
                             </Link>
                         </li>
@@ -45,7 +46,7 @@ const Index = ({ data }) => {
 };
 
 Index.getInitialProps = async function () {
-    const res = await fetch(`https://swapi.co/api/films/?q=`);
+    const res = await fetch(`https://swapi.co/api/films/`);
     const data = await res.json();
     console.log(`Data has been fetched. Count is:\n `, data.count)
     return {
