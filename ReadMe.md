@@ -13,3 +13,5 @@ Once the above is done please run the following command to start the server
 Navigate to 'http://localhost:3000/ to view the info
 
 ### Fell free to use/modify the APP as you wish to 😁
+
+#### Live link to the APP https://starwars.hazelbag.now.sh
