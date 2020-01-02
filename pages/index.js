@@ -17,7 +17,7 @@ const Index = ({ data }) => {
                 <ul>
                     {data.results.map(result => (
                         <li key={result.episode_id}>
-                            <Link as={`/info/film`} href={`info/?id=${result.url}`}>
+                            <Link as={`/info/${result.title}`} href={`info/?id=${result.url}`}>
                                 <a>{result.title}</a>
                             </Link>
                         </li>
