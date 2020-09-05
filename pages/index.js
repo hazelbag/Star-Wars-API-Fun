@@ -54,7 +54,7 @@ const Index = ({ data }) => {
 };
 
 Index.getInitialProps = async function () {
-  const res = await fetch(`http://swapi.dev/api/films/`);
+  const res = await fetch(`https://swapi.dev/api/films/`);
   const data = await res.json();
   return {
     data,
