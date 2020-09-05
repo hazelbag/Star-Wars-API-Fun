@@ -45,7 +45,9 @@ const InfoPage = ({ data }) => {
 
 InfoPage.getInitialProps = async function (context) {
   const { id } = context.query;
-  const newID = id.replace("null", "");
+  // console.log("this id", id);
+  const newID = id.replace("nullhttp", "https");
+  // console.log(newID);
   const res = await fetch(`${newID}`);
   const data = await res.json();
   return { data };
