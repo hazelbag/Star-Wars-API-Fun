@@ -14,4 +14,4 @@ Navigate to 'http://localhost:3000/ to view the info
 
 ### Fell free to use/modify the APP as you wish to 😁
 
-#### Live link to the APP https://star-wars-api-fun.now.sh/
+#### Live link to the APP [Star Wars](https://chat.my-web.me/)
