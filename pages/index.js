@@ -21,7 +21,7 @@ const Index = ({ data }) => {
 					{data.results.map((result) => (
 						<li key={result.episode_id}>
 							<Link
-								as={`/info/${result.title.replace(" ", "-").toLowerCase()}`}
+								as={`/info/${result.title.replace(/\s+/g, "-").toLowerCase()}`}
 								href={`/info/?id=http://${result.url}`}
 							>
 								<a>{result.title}</a>
