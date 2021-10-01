@@ -6,11 +6,11 @@ const Index = ({ data }) => {
 	return (
 		<Layout>
 			<div className='landingPG'>
-				<h1 className='welcomeHeading'>Star Wars Film Info</h1>
+				<h1 className='welcomeHeading'>Star Wars Movie Info</h1>
 				<br />
 				<h3 className='infoHeading'>
 					Use the APP to learn or expand your knowldege of all thing Star Wars
-					Related
+					Movie Related
 				</h3>
 				<br />
 				<h4 className='infoSection'>

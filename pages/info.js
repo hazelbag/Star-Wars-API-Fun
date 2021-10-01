@@ -5,17 +5,15 @@ const InfoPage = ({ data }) => {
 	return (
 		<Layout>
 			<div className='landingPG'>
-				<h1 className='welcomeHeading'>Movie Info</h1>
-				<br />
-				<h4 className='movieTitle'>{data.title}</h4>
-				<br />
-				<p className=' container movieDescription'>{data.opening_crawl}</p>
+				<h1 className='welcomeHeading'>{data.title}</h1>
 				<br />
 				<ul className='moreInfo'>
 					<li>Episode: {data.episode_id}</li>
 					<li>Release Date: {data.release_date}</li>
 					<li>Director: {data.director}</li>
 				</ul>
+				<br />
+				<p className=' container movieDescription'>{data.opening_crawl}</p>
 			</div>
 			<style jsx>{`
 				.welcomeHeading {
