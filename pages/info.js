@@ -11,6 +11,7 @@ const InfoPage = ({ data }) => {
 					<li>Episode: {data.episode_id}</li>
 					<li>Release Date: {data.release_date}</li>
 					<li>Director: {data.director}</li>
+					<li>Producer: {data.producer}</li>
 				</ul>
 				<br />
 				<p className=' container movieDescription'>{data.opening_crawl}</p>
