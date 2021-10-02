@@ -1,5 +1,6 @@
 import Layout from "../components/MyLayout";
 import fetch from "isomorphic-unfetch";
+import Link from "next/link";
 
 const InfoPage = ({ data }) => {
 	return (
@@ -15,6 +16,15 @@ const InfoPage = ({ data }) => {
 				</ul>
 				<br />
 				<p className=' container movieDescription'>{data.opening_crawl}</p>
+			</div>
+			<div>
+				<div className='buttonImage'>
+					<Link href='/'>
+						<a className='backButton'>
+							<img src='/death_star.png' alt='' />
+						</a>
+					</Link>
+				</div>
 			</div>
 			<style jsx>{`
 				.welcomeHeading {
@@ -34,6 +44,13 @@ const InfoPage = ({ data }) => {
 				ul {
 					list-style-type: none;
 					font-size: 28px;
+				}
+				.backButton img {
+					height: 64px;
+				}
+				.buttonImage:hover {
+					-webkit-transform: scaleX(-1);
+					transform: scaleX(-1);
 				}
 			`}</style>
 		</Layout>
